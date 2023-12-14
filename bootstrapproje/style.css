@@ -1,0 +1,92 @@
+.navbar-brand{
+    letter-spacing:2px;
+}
+.maindiv{
+    display:grid;
+    place-items: center;
+    
+}
+.sd{
+    background-color:burlywood ;
+    color:white;
+    font-weight:bolder;
+    position:absolute;
+    z-index:1;
+    padding:8px;
+    margin: 5px;
+}
+.navbar-brand::first-letter{
+    font-size:25px;
+}
+
+.card{
+    padding:12px;
+    position:relative;
+
+}
+
+.card .btn{
+    display:block;
+    background-color: gray;
+    color:white;
+}
+
+.card .span1{
+    background-color: sienna;
+    position:absolute;
+    right:0;
+    color:white;
+    padding:3px;
+    font-weight:bolder;
+    border-radius:5px; 
+}
+.card .span2{
+    background-color:sienna;
+    position:absolute;
+    right:0;
+    color:white;
+    padding:3px;
+    font-weight:bolder;
+    border-radius:5px; 
+}
+#two .card{
+    width:25%;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    transition:0.5;
+    z-index:1;
+    box-shadow:15px 15px 8px grey;
+    border-radius:6px;
+}
+
+.kat{
+    margin:5px;
+    letter-spacing:3px;
+    box-shadow:6px 6px 3px grey;
+    text-align:center;
+}
+
+.urun{
+    margin:50px;
+    letter-spacing:3px;
+    box-shadow:6px 6px 3px grey;
+    text-align:center;
+}
+
+
+@media(max-width:768px){
+    #two .card{
+        width:100%;
+    }
+    .card:hover{
+        transform:none;
+        transition:none;
+        z-index:none;
+        box-shadow:none;
+        border-radius:none;
+    }
+
+}
+
